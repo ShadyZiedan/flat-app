@@ -2,7 +2,7 @@
 
 namespace App\Services;
 
-class AvitoService extends PlatformService
+class AvitoService implements IPlatformService
 {
 
     protected int $platformId = 1;

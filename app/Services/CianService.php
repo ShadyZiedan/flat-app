@@ -2,7 +2,7 @@
 
 namespace App\Services;
 
-class CianService extends PlatformService
+class CianService implements IPlatformService
 {
 
     protected int $platformId = 2;

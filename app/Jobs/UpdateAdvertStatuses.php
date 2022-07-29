@@ -5,7 +5,7 @@ namespace App\Jobs;
 use App\Models\AdvertStatus;
 use App\Models\Platform;
 use App\Services\AdvertStatusDTO;
-use App\Services\PlatformService;
+use App\Services\IPlatformService;
 use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldBeUnique;
 use Illuminate\Contracts\Queue\ShouldQueue;
@@ -22,7 +22,7 @@ class UpdateAdvertStatuses implements ShouldQueue
      *
      * @return void
      */
-    public function __construct(private PlatformService $platformService)
+    public function __construct(private IPlatformService $platformService)
     {
     }
 

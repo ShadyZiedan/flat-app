@@ -2,7 +2,7 @@
 
 namespace App\Services;
 
-class DomclickService extends PlatformService
+class DomclickService implements IPlatformService
 {
 
     protected int $platformId = 3;
